@@ -4,6 +4,20 @@ All notable changes to the awesome-windsurf repository will be documented in thi
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/) and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.3.0] - 2024-12-14
+
+### Changed
+
+- Updated README.md layout and structure:
+  - Restored Windsurf logo and improved header layout
+  - Removed redundant Community section
+  - Streamlined content organization
+- Enhanced README.md with informative badges:
+  - Added Discord community badge with online member count
+  - Added project status badges (PRs Welcome, Maintained, Contributors)
+  - Added repository information badges (Last Commit, Size, License, Stars)
+- Moved Global Rules Custom Prompt to simplify project structure
+
 ## [0.2.0] - 2024-12-14
 
 ### Changed
