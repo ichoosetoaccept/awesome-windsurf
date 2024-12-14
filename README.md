@@ -1,5 +1,7 @@
 # Awesome Windsurf
 
+![Windsurf Logo](windsurf_logo_wordmark.png)
+
 A curated list of resources, tips, and community-driven content for Windsurf - the world's first agentic IDE.
 
 The format is based on [Awesome Lists](https://github.com/sindresorhus/awesome) and this project adheres to those guidelines.
@@ -15,6 +17,7 @@ This is not an official Codeium repository. For official documentation and suppo
 ## Table of Contents
 
 - [Please Read](#please-read)
+- [Community Prompts](#community-prompts)
 - [Known Issues & Solutions](#known-issues--solutions)
 - [Tips and Tricks](#tips-and-tricks)
 - [Themes](#themes)
@@ -22,6 +25,15 @@ This is not an official Codeium repository. For official documentation and suppo
 - [Community](#community)
 - [Contributing](#contributing)
 - [License](#license)
+
+## Community Prompts
+
+This repository includes a collection of community-contributed prompts that enhance Windsurf's capabilities. Check out the `prompts/` directory for:
+- Task-specific prompts
+- Workflow optimizations
+- Custom configurations
+
+Feel free to contribute your own prompts via pull requests!
 
 ## Known Issues & Solutions
 
