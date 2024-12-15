@@ -1,7 +1,7 @@
 {
   "name": "awesome-windsurf",
   "description": "A curated hub of awesome Windsurf resources",
-  "version": "2024.12.4",
+  "version": "2024.12.5",
   "private": false,
   "devDependencies": {
     "@commitlint/cli": "^19.6.0",
