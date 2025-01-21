@@ -9,5 +9,5 @@ updates:
     labels:
       - 'dependencies'
     commit-message:
-      prefix: 'chore'
+      prefix: 'update'
       include: 'scope'
