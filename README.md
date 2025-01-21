@@ -1,5 +1,7 @@
 # [![Windsurf Logo](windsurf_logo_wordmark.png)][windsurf-link]
 
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/763126e204fe4a2db366b2df6f21ce99)](https://app.codacy.com/gh/ichoosetoaccept/awesome-windsurf?utm_source=github.com&utm_medium=referral&utm_content=ichoosetoaccept/awesome-windsurf&utm_campaign=Badge_Grade)
+
 [![Join us on Discord][discord-shield]][discord-link]
 [![GitHub Actions][actions-shield]][actions-link]
 [![PRs Welcome][prs-shield]][contributing-link]
