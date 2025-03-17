@@ -49,6 +49,7 @@ Join our community on [Discord](https://discord.gg/3XFf78nAx5) (badge above) or 
 
 - [awesome-windsurfrules](https://github.com/SchneiderSam/awesome-windsurfrules) - A complementary collection of Windsurf rules and guidelines
 - [windsurfrules by kinopeee](https://github.com/kinopeee/windsurfrules)
+- [windsurfrules_by_kamusis](https://github.com/kamusis/windsurf_memories)
 
 ## Community Prompts
 
