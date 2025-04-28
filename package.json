@@ -8,7 +8,7 @@
     "@eslint/js": "^9.25.1",
     "@kie/act-js": "^2.6.2",
     "@semantic-release/commit-analyzer": "^13.0.1",
-    "@semantic-release/github": "^11.0.1",
+    "@semantic-release/github": "^11.0.2",
     "@semantic-release/release-notes-generator": "^14.0.3",
     "cspell": "^8.19.2",
     "eslint": "^9.25.1",
