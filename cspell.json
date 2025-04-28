@@ -16,7 +16,8 @@
     "cdefecc",
     "RAII",
     "mcpservers",
-    "kinopeee"
+    "kinopeee",
+    "kamusis"
   ],
   "ignorePaths": ["node_modules/**", "package.json", "package-lock.json"],
   "allowCompoundWords": true,
