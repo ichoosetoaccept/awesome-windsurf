@@ -3,7 +3,7 @@
   "description": "A curated hub of awesome Windsurf resources",
   "private": false,
   "devDependencies": {
-    "@commitlint/cli": "^19.8.0",
+    "@commitlint/cli": "^19.8.1",
     "@commitlint/config-conventional": "^19.8.0",
     "@eslint/js": "^9.25.1",
     "@kie/act-js": "^2.6.2",
