@@ -16,9 +16,14 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - uses: actions/configure-pages@v4
+      - name: Prepare artifact
+        run: |
+          mkdir -p public
+          cp index.html windsurf_logo_wordmark.png styles.css public/
+          
       - uses: actions/upload-pages-artifact@v3
         with:
-          path: .
+          path: public
   
   deploy-to-pages:
     needs: deploy
