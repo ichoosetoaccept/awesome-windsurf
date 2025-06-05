@@ -1,5 +1,7 @@
 # [![Windsurf Logo](windsurf_logo_wordmark.png)](https://www.codeium.com/windsurf)
 
+> 🌐 View this page as a static site: [https://ichoosetoaccept.github.io/awesome-windsurf/](https://ichoosetoaccept.github.io/awesome-windsurf/)
+
 [![Join us on Discord](https://img.shields.io/discord/1027685395649015980?logo=discord&logoColor=white&label=Join%20us%20on%20Discord&labelColor=E55882&color=58E5BB)](https://discord.gg/3XFf78nAx5)
 [![CodeRabbit Pull Request Reviews](https://img.shields.io/coderabbit/prs/github/ichoosetoaccept/awesome-windsurf?utm_source=oss&utm_medium=github&utm_campaign=ichoosetoaccept%2Fawesome-windsurf&labelColor=171717&color=FF570A&label=CodeRabbit+Reviews)](https://coderabbit.ai)
 [![GitHub Actions](https://github.com/ichoosetoaccept/awesome-windsurf/actions/workflows/release.yml/badge.svg)](https://github.com/ichoosetoaccept/awesome-windsurf/actions)
