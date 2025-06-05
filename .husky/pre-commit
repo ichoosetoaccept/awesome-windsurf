@@ -1,8 +1,0 @@
-#!/usr/bin/env sh
-
-# This hook runs linting checks before each commit
-# Logic:
-# 1. Runs lint-staged to check files based on rules in package.json
-# 2. No version management here - that's handled by GitHub Actions
-
-npx lint-staged

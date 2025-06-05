@@ -1,4 +1,17 @@
+# OS generated files
 .DS_Store
-.vscodenode_modules/
-node_modules/
-.vscode
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Editor directories and files
+.idea/
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?

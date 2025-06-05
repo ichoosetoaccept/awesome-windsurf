@@ -2,8 +2,8 @@ name: Deploy to GitHub Pages
 
 on:
   push:
-    branches: [main] # Run on pushes to the main branch
-  workflow_dispatch: # Allow manual triggers
+    branches: [main]
+  workflow_dispatch:
 
 permissions:
   contents: write
@@ -14,17 +14,12 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-
-      - name: Setup Pages
-        uses: actions/configure-pages@v4
-
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
+      - uses: actions/checkout@v4
+      - uses: actions/configure-pages@v4
+      - uses: actions/upload-pages-artifact@v3
         with:
           path: .
-
+  
   deploy-to-pages:
     needs: deploy
     permissions:
