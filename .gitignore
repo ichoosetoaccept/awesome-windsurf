@@ -75,11 +75,13 @@ out/
 # npm/yarn
 .npm
 yarn-debug.log*
-.yarn/cache
-.yarn/unplugged
-.yarn/build-state.yml
-.yarn/install-state.gz
-.pnp.*
+ .yarn/*
+ !.yarn/patches
+ !.yarn/plugins
+ !.yarn/releases
+ !.yarn/sdks
+ !.yarn/versions
+ .pnp.*
 
 # Yarn v2
 .yarn/*
@@ -88,15 +90,6 @@ yarn-debug.log*
 !.yarn/releases
 !.yarn/sdks
 !.yarn/versions
-
-# Static Site Generators
-# ====================
-# Gatsby
-public/
-.cache/
-
-# VuePress
-.vuepress/dist/
 
 # Development
 # ===========
