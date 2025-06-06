@@ -70,27 +70,6 @@ out/
 # Logs
 *.log
 
-# Package Manager
-# ==============
-# npm/yarn
-.npm
-yarn-debug.log*
- .yarn/*
- !.yarn/patches
- !.yarn/plugins
- !.yarn/releases
- !.yarn/sdks
- !.yarn/versions
- .pnp.*
-
-# Yarn v2
-.yarn/*
-!.yarn/patches
-!.yarn/plugins
-!.yarn/releases
-!.yarn/sdks
-!.yarn/versions
-
 # Development
 # ===========
 # Serverless
@@ -110,7 +89,6 @@ yarn-debug.log*
 
 # ESLint cache
 .eslintcache
-
 
 #Ignore windsurf AI rules
 .windsurfrules
