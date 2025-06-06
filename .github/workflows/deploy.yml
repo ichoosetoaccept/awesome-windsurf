@@ -3,11 +3,10 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches: [main] # Run on pushes to the main branch
-  pull_request: # Run on pull request events
   workflow_dispatch: # Allow manual triggers
 
 concurrency:
-  group: 'pages-${{ github.ref }}'
+  group: 'pages-${{ github.ref_name }}'
   cancel-in-progress: true
 
 permissions:

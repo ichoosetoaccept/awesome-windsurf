@@ -32,7 +32,7 @@
   color: var(--primary-red);
   font-weight: bold;
   display: inline-block;
-  padding: 0.25em 0.75em;
+  padding: calc(var(--spacing-base) * 0.25) calc(var(--spacing-base) * 0.75);
   border: 2px solid var(--primary-red);
   border-radius: 12px;
   background: rgba(255, 255, 255, 0.9);
@@ -92,7 +92,6 @@
   color: #cc3300;
   text-shadow: 2px 2px 0 #ffcc00;
   margin: 20px 0;
-  animation: blink 1.5s infinite;
 }
 
 .construction-message {
@@ -106,13 +105,12 @@
 .construction-icon {
   margin-top: 20px;
   font-size: 4em;
-  animation: bounce 2s infinite;
 }
 
 .construction-est {
   position: absolute;
-  bottom: 0.6em;
-  right: 1.25em;
+  bottom: calc(var(--spacing-base) * 0.6);
+  right: calc(var(--spacing-base) * 1.25);
   font-size: 0.8em;
   color: var(--dark-orange);
   text-shadow: 0 0 2px rgba(0, 0, 0, 0.1);
