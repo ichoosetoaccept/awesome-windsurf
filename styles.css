@@ -4,6 +4,13 @@
   --spacing-base: 1rem;
 }
 
+/* Apply border-box universally */
+html {
+  box-sizing: border-box;
+}
+*, *::before, *::after {
+  box-sizing: inherit;
+}
 /* Main container */
 .markdown-body {
   box-sizing: border-box;
