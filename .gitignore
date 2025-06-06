@@ -117,3 +117,7 @@ public/
 
 # ESLint cache
 .eslintcache
+
+
+#Ignore windsurf AI rules
+.windsurfrules

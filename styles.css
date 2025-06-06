@@ -35,8 +35,8 @@
   padding: calc(var(--spacing-base) * 0.25) calc(var(--spacing-base) * 0.75);
   border: 2px solid var(--primary-red);
   border-radius: 12px;
-  background: rgba(255, 255, 255, 0.9);
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+  background: rgb(255 255 255 / 90%);
+  box-shadow: 0 2px 4px rgb(0 0 0 / 15%);
   position: absolute;
   top: -0.3em;
   white-space: nowrap;
@@ -57,8 +57,8 @@
   text-align: center;
   margin: 40px 0;
   padding: 30px;
-  background: #ffffcc;
-  border: 4px dashed #ff9900;
+  background: #ffc;
+  border: 4px dashed #f90;
   border-radius: 20px;
   position: relative;
   overflow: hidden;
@@ -69,12 +69,12 @@
   top: 10px;
   left: 50%;
   transform: translateX(-50%) rotate(-5deg);
-  background: #ff9900;
+  background: #f90;
   color: white;
   padding: 5px 20px;
   font-weight: bold;
   font-size: 1.2em;
-  box-shadow: 3px 3px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 3px 3px 0 rgb(0 0 0 / 20%);
   z-index: 1;
 }
 
@@ -89,14 +89,14 @@
 .construction-title {
   font-family: 'Comic Sans MS', 'Comic Sans', cursive;
   font-size: 2.5em;
-  color: #cc3300;
-  text-shadow: 2px 2px 0 #ffcc00;
+  color: #c30;
+  text-shadow: 2px 2px 0 #fc0;
   margin: 20px 0;
 }
 
 .construction-message {
   font-size: 1.2em;
-  color: #663300;
+  color: #630;
   max-width: 600px;
   margin: 0 auto;
   line-height: 1.6;
@@ -113,7 +113,7 @@
   right: calc(var(--spacing-base) * 1.25);
   font-size: 0.8em;
   color: var(--dark-orange);
-  text-shadow: 0 0 2px rgba(0, 0, 0, 0.1);
+  text-shadow: 0 0 2px rgb(0 0 0 / 10%);
   transform: rotate(-2deg);
 }
 
@@ -148,7 +148,7 @@
 }
 
 /* Responsive styles */
-@media (max-width: 767px) {
+@media (width <= 767px) {
   .markdown-body {
     padding: 15px;
   }
