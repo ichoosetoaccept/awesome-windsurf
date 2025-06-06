@@ -1,4 +1,93 @@
+# System Files
+# ============
+# macOS
 .DS_Store
-.vscodenode_modules/
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+
+# Windows
+Thumbs.db
+ehthumbs.db
+
+# Editor & IDE
+# ===========
+# Visual Studio Code
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+.vscode-test/
+*.code-workspace
+
+# JetBrains IDEs
+.idea/
+*.iml
+*.iws
+*.ipr
+
+# Visual Studio
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sln.docstates
+*.sw?
+*.user
+*.userosscache
+
+# Sublime Text
+*.sublime-*
+
+# Dependencies & Build
+# ===================
+# Node.js
 node_modules/
-.vscode
+yarn-error.log
+npm-debug.log*
+.yarn-integrity
+
+# Build outputs
+dist/
+build/
+.next/
+out/
+
+# Cache directories
+.cache/
+.parcel-cache/
+.sass-cache/
+.temp/
+.tmp/
+
+# Environment
+.env
+.env.*
+!.env.example
+
+# Logs
+*.log
+
+# Development
+# ===========
+# Serverless
+.serverless/
+
+# FuseBox
+.fusebox/
+
+# DynamoDB Local
+.dynamodb/
+
+# TernJS
+.tern-port
+
+# REPL history
+.node_repl_history
+
+# ESLint cache
+.eslintcache
+
+#Ignore windsurf AI rules

@@ -1,0 +1,162 @@
+:root {
+  --primary-red: #d32f2f;
+  --dark-orange: #cc4c00;
+  --spacing-base: 1rem;
+}
+
+/* Apply border-box universally */
+html {
+  box-sizing: border-box;
+}
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+/* Main container */
+.markdown-body {
+  box-sizing: border-box;
+  min-width: 200px;
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 2.5rem;
+}
+
+/* Header section */
+.header {
+  text-align: center;
+  margin-bottom: 2em;
+  position: relative;
+}
+
+.header img {
+  max-width: 300px;
+  margin-bottom: 1em;
+}
+
+/* Stamp styles */
+.stamp {
+  font-family: 'Bradley Hand', 'Segoe Print', 'Comic Sans MS', cursive;
+  font-size: 1.2em;
+  color: var(--primary-red);
+  font-weight: bold;
+  display: inline-block;
+  padding: calc(var(--spacing-base) * 0.25) calc(var(--spacing-base) * 0.75);
+  border: 2px solid var(--primary-red);
+  border-radius: 12px;
+  background: rgb(255 255 255 / 90%);
+  box-shadow: 0 2px 4px rgb(0 0 0 / 15%);
+  position: absolute;
+  top: -0.3em;
+  white-space: nowrap;
+}
+
+.stamp-left {
+  left: 20px;
+  transform: rotate(-3deg);
+}
+
+.stamp-right {
+  right: 20px;
+  transform: rotate(4deg);
+}
+
+/* Under construction banner */
+.construction-banner {
+  text-align: center;
+  margin: 40px 0;
+  padding: 30px;
+  background: #ffc;
+  border: 4px dashed #f90;
+  border-radius: 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+.banner-ribbon {
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%) rotate(-5deg);
+  background: #f90;
+  color: white;
+  padding: 5px 20px;
+  font-weight: bold;
+  font-size: 1.2em;
+  box-shadow: 3px 3px 0 rgb(0 0 0 / 20%);
+  z-index: 1;
+}
+
+.construction-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 40px 20px 30px;
+}
+
+.construction-title {
+  font-family: 'Comic Sans MS', 'Comic Sans', cursive;
+  font-size: 2.5em;
+  color: #c30;
+  text-shadow: 2px 2px 0 #fc0;
+  margin: 20px 0;
+}
+
+.construction-message {
+  font-size: 1.2em;
+  color: #630;
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+.construction-icon {
+  margin-top: 20px;
+  font-size: 4em;
+}
+
+.construction-est {
+  position: absolute;
+  bottom: calc(var(--spacing-base) * 0.6);
+  right: calc(var(--spacing-base) * 1.25);
+  font-size: 0.8em;
+  color: var(--dark-orange);
+  text-shadow: 0 0 2px rgb(0 0 0 / 10%);
+  transform: rotate(-2deg);
+}
+
+/* Footer */
+.footer {
+  margin-top: 3em;
+  text-align: center;
+  color: #6a737d;
+  font-size: 0.9em;
+}
+
+/* Animations */
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.7; }
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-0.6em); }
+}
+
+/* Apply animations only if user hasn't requested reduced motion */
+@media (prefers-reduced-motion: no-preference) {
+  .construction-title {
+    animation: blink 1.5s infinite;
+  }
+  
+  .construction-icon {
+    animation: bounce 2s infinite;
+  }
+}
+
+/* Responsive styles */
+@media (max-width: 767px) {
+   .markdown-body {
+     padding: 15px;
+   }
+ }
