@@ -47,9 +47,5 @@ Brief technical description of the implementation.
 
 - **Migration**: Database or config migrations required
 - **Environment**: New environment variables or settings
-- **Breaking Changes**: API/interface modifications
-- **Performance**: Expected impact on system performance
-- **Security**: Security considerations or improvements
-- **Architecture**: Design pattern or structural changes
 
 **Note**: Use `/pr-review` for detailed code analysis and feedback.
