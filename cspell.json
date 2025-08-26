@@ -17,7 +17,8 @@
     "RAII",
     "mcpservers",
     "kinopeee",
-    "kamusis"
+    "kamusis",
+    "elif"
   ],
   "ignorePaths": ["node_modules/**", "package.json", "package-lock.json"],
   "allowCompoundWords": true,
