@@ -30,7 +30,7 @@ elif git show-ref --verify --quiet refs/heads/main; then
 elif git show-ref --verify --quiet refs/heads/master; then
     BASE_BRANCH="master"
 else
-    echo "Error: No suitable base branch found (main/master)"
+    echo "Error: No suitable default base branch found"
     exit 1
 fi
 
