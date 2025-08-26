@@ -47,11 +47,9 @@ fi
 
 # Disable git pager to prevent interactive mode
 export GIT_PAGER=cat
-git config --global --replace-all core.pager cat >/dev/null 2>&1 || true
 
 # Generate diff using triple-dot syntax with rename detection (git picks correct merge-base implicitly)
-git diff --no-color -M "${BASE_BRANCH}...${CURRENT_BRANCH}"
-```
+git --no-pager diff --no-color -M "${BASE_BRANCH}...${CURRENT_BRANCH}"
 
 ## Step 2: Collect PR Context if not already provided by user. Skip if provided already
 
