@@ -12,8 +12,8 @@ Extract technical information from conversation history:
 
 - **Files Modified**: Source code, tests, config, documentation changes
 - **Code Metrics**: Lines added/removed, functions/methods modified
-- **Architecture Impact**: New packages, interface changes, breaking changes
-- **Dependencies**: go.mod updates, new libraries
+- **Architecture Impact**: New modules, interface changes, breaking changes
+- **Dependencies**: Package manager updates, new libraries
 
 ## Step 2: Generate Technical PR Summary
 
@@ -21,7 +21,16 @@ Extract technical information from conversation history:
 
 ### What Changed
 
-Brief technical description of the implementation.
+**One-line technical summary**: [Brief description of the core change]
+
+**Concrete deltas** (2-4 bullets):
+
+- Added: [specific functionality/files added]
+- Modified: [specific components changed]
+- Removed: [specific items deleted]
+- Fixed: [specific issues resolved]
+
+**Rationale**: [One sentence explaining why this change was made and any scope/rollout considerations]
 
 ### Files Modified
 
