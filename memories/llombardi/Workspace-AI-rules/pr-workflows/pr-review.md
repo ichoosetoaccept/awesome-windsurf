@@ -8,8 +8,7 @@ auto_execution_mode: 3
 This workflow provides a comprehensive review of Pull Requests by analyzing code changes, collecting context, and evaluating multiple aspects of the implementation. Prefer concise, actionable findings; use clarifying questions only when essential to resolve ambiguity.
 ## Step 1: Generate Diff Against Base Branch
 
-First, we'll generate a diff against the main/master branch to understand what changes are being proposed.
-
+First, we'll generate a diff against the repository's default branch (with fallbacks) to understand what changes are being proposed.
 ```bash
 # Enable safe shell options
 set -euo pipefail
