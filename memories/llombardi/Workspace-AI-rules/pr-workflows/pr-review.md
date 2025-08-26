@@ -5,8 +5,7 @@ auto_execution_mode: 3
 
 # PR Review Workflow
 
-This workflow provides a comprehensive review of Pull Requests by analyzing code changes, collecting context, and evaluating multiple aspects of the implementation. You may also occasionally leave open questions to the user if you spot some issue and let the user guess what the issue is, as a learning experience.
-
+This workflow provides a comprehensive review of Pull Requests by analyzing code changes, collecting context, and evaluating multiple aspects of the implementation. Prefer concise, actionable findings; use clarifying questions only when essential to resolve ambiguity.
 ## Step 1: Generate Diff Against Base Branch
 
 First, we'll generate a diff against the main/master branch to understand what changes are being proposed.
