@@ -6,9 +6,11 @@ auto_execution_mode: 3
 # PR Review Workflow
 
 This workflow provides a comprehensive review of Pull Requests by analyzing code changes, collecting context, and evaluating multiple aspects of the implementation. Prefer concise, actionable findings; use clarifying questions only when essential to resolve ambiguity.
+
 ## Step 1: Generate Diff Against Base Branch
 
 First, we'll generate a diff against the repository's default branch (with fallbacks) to understand what changes are being proposed.
+
 ```bash
 # Enable safe shell options
 set -euo pipefail
@@ -50,8 +52,9 @@ export GIT_PAGER=cat
 
 # Generate diff using triple-dot syntax with rename detection (git picks correct merge-base implicitly)
 git --no-pager diff --no-color -M "${BASE_BRANCH}...${CURRENT_BRANCH}"
+```
 
-## Step 2: Collect PR Context if not already provided by user. Skip if provided already
+## Step 2: Collect PR Context (skip if already provided)
 
 You may provide any of the following context inline when invoking the slash command, or provide it now if not already given:
 
