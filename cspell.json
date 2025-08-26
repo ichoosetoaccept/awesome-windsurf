@@ -18,7 +18,9 @@
     "mcpservers",
     "kinopeee",
     "kamusis",
-    "elif"
+    "elif",
+    "llombardi",
+    "unshallow"
   ],
   "ignorePaths": ["node_modules/**", "package.json", "package-lock.json"],
   "allowCompoundWords": true,

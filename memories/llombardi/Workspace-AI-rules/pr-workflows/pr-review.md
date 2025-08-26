@@ -12,35 +12,48 @@ This workflow provides a comprehensive review of Pull Requests by analyzing code
 First, we'll generate a diff against the main/master branch to understand what changes are being proposed.
 
 ```bash
-# Check if main branch exists, fallback to master
-echo "Checking for available base branches..."
+# Enable safe shell options
+set -euo pipefail
 
-if git show-ref --verify --quiet refs/heads/main; then
-    BASE_BRANCH="main"
+# Fetch origin refs quietly to handle shallow/remote-only cases
+git fetch origin --quiet 2>/dev/null || echo "Warning: Could not fetch from origin"
+
+# Detect repository default remote branch via refs/remotes/origin/HEAD with fallbacks
+if git symbolic-ref refs/remotes/origin/HEAD >/dev/null 2>&1; then
+    BASE_BRANCH=$(git symbolic-ref refs/remotes/origin/HEAD | sed 's@^refs/remotes/@@')
 elif git show-ref --verify --quiet refs/remotes/origin/main; then
     BASE_BRANCH="origin/main"
+elif git show-ref --verify --quiet refs/remotes/origin/master; then
+    BASE_BRANCH="origin/master"
+elif git show-ref --verify --quiet refs/heads/main; then
+    BASE_BRANCH="main"
 elif git show-ref --verify --quiet refs/heads/master; then
     BASE_BRANCH="master"
 else
-    BASE_BRANCH="origin/master"
+    echo "Error: No suitable base branch found (main/master)"
+    exit 1
 fi
 
-echo "Selected base branch: $BASE_BRANCH"
+# Determine current branch robustly (handles detached HEAD)
+CURRENT_BRANCH=$(git rev-parse --abbrev-ref HEAD)
+if [[ "${CURRENT_BRANCH}" == "HEAD" ]]; then
+    CURRENT_BRANCH=$(git rev-parse HEAD)
+fi
 
-# Get current branch name
-CURRENT_BRANCH=$(git branch --show-current)
+# Optionally compute and log merge-base if available
+if MERGE_BASE=$(git merge-base "${BASE_BRANCH}" "${CURRENT_BRANCH}" 2>/dev/null); then
+    echo "Merge base commit: ${MERGE_BASE}"
+else
+    echo "Warning: Could not determine merge base"
+fi
 
-# Find merge base
-MERGE_BASE=$(git merge-base $BASE_BRANCH $CURRENT_BRANCH)
-echo "Merge base commit: $MERGE_BASE"
-
-# Generate diff against base branch
-git diff $MERGE_BASE $CURRENT_BRANCH
+# Generate diff using triple-dot syntax (git picks correct merge-base implicitly)
+git diff --no-color "${BASE_BRANCH}...${CURRENT_BRANCH}"
 ```
 
 ## Step 2: Collect PR Context if not already provided by user. Skip if provided already
 
-Please provide any of the following context about this Pull Request:
+You may provide any of the following context inline when invoking the slash command, or provide it now if not already given:
 
 1. **PR Summary**: Brief description of what this PR accomplishes
 2. **Ticket/Issue Description**: Link to or description of the related ticket/issue

@@ -30,6 +30,15 @@ Brief technical description of the implementation.
 - **Config**: Configuration or deployment changes
 - **Dependencies**: Package updates or additions
 
+<!-- Optional machine-friendly tokens:
+files_changed: {{files_changed}}
+lines_added: {{lines_added}}
+lines_deleted: {{lines_deleted}}
+test_files_modified: {{test_files_modified}}
+config_files_modified: {{config_files_modified}}
+dependency_files_modified: {{dependency_files_modified}}
+-->
+
 ### Technical Impact
 
 - **Breaking Changes**: API/interface modifications

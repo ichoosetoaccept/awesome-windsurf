@@ -4,11 +4,11 @@ This contribution provides comprehensive PR (Pull Request) **workflows** for Win
 
 ## What's Included
 
-### PR Review Workflow (`pr-review.md`)
+### PR Review Workflow ([`pr-review.md`](./Workspace-AI-rules/pr-workflows/pr-review.md))
 
 A comprehensive workflow that:
 
-- Generates diffs against main/master branch automatically
+- Generates diffs against the detected base branch (main/master or origin/\*) automatically
 - Collects PR context from users
 - Performs multi-dimensional code analysis including:
   - Algorithmic complexity analysis
@@ -21,7 +21,7 @@ A comprehensive workflow that:
   - Documentation assessment
 - Provides structured review summaries with actionable feedback
 
-### PR Summary Workflow (`pr-summary.md`)
+### PR Summary Workflow ([`pr-summary.md`](./Workspace-AI-rules/pr-workflows/pr-summary.md))
 
 A technical summary generator that:
 
@@ -48,10 +48,18 @@ Use the slash commands in Windsurf:
 
 ## Setup
 
-Simply copy these workflow files to your project's `.windsurf/workflows/` directory:
+Create the workflows directory and copy the workflow files to your project:
 
-- `pr-review.md`
-- `pr-summary.md`
+```bash
+# Create the workflows directory if it doesn't exist
+mkdir -p .windsurf/workflows/
+
+# Copy the workflow files (files are copied, not moved or renamed)
+cp memories/llombardi/Workspace-AI-rules/pr-workflows/pr-review.md .windsurf/workflows/
+cp memories/llombardi/Workspace-AI-rules/pr-workflows/pr-summary.md .windsurf/workflows/
+```
+
+**Note**: These commands copy the files safely without modifying the originals.
 
 ## Tips and Tricks
 
@@ -64,12 +72,14 @@ Simply copy these workflow files to your project's `.windsurf/workflows/` direct
 
 Perfect for:
 
-- **Enterprise Development**: Consistent review standards across teams
-- **Open Source Projects**: Thorough review process for contributors
-- **DevOps Teams**: Technical summaries for deployment planning
-- **Code Quality Gates**: Automated quality checks before merge
+- **Enterprise development**: Consistent review standards across teams
+- **Open-source projects**: Thorough review process for contributors
+- **DevOps teams**: Technical summaries for deployment planning
+- **Code-quality gates**: Automated quality checks before merge
 
 ## Current Limitations
 
 - Requires Git repository with main/master branch. Indicate the base branch as context in the command if it's different from main/master.
+- Git must be installed and reachable (commands assume `git` in PATH)
+- Repository refs must be fetchable (CI or shallow clones may need `git fetch --unshallow` or full fetch of refs)
 - Manual context collection step in PR review. You may provide context in the command if you want to skip this step.
