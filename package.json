@@ -16,10 +16,10 @@
     "globals": "^16.5.0",
     "husky": "^9.1.7",
     "lint-staged": "^16.2.6",
-    "markdown-link-check": "^3.13.7",
-    "markdownlint-cli2": "^0.17.2",
+    "markdown-link-check": "^3.14.2",
+    "markdownlint-cli2": "^0.20.0",
     "prettier": "^3.6.2",
-    "semantic-release": "^24.2.3",
+    "semantic-release": "^25.0.2",
     "shellcheck": "^4.1.0"
   },
   "scripts": {
