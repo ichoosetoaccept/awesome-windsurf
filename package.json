@@ -12,7 +12,7 @@
     "@semantic-release/release-notes-generator": "^14.0.3",
     "cspell": "^9.2.2",
     "eslint": "^9.25.1",
-    "eslint-config-prettier": "^10.1.2",
+    "eslint-config-prettier": "^10.1.8",
     "globals": "^16.0.0",
     "husky": "^9.1.7",
     "lint-staged": "^15.5.1",
