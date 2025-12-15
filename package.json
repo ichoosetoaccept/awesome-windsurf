@@ -15,7 +15,7 @@
     "eslint-config-prettier": "^10.1.8",
     "globals": "^16.5.0",
     "husky": "^9.1.7",
-    "lint-staged": "^16.2.6",
+    "lint-staged": "^16.2.7",
     "markdown-link-check": "^3.14.2",
     "markdownlint-cli2": "^0.20.0",
     "prettier": "^3.6.2",
